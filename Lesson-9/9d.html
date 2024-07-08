@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+</head>
+<body>
+    <input placeholder="Text" class = "name"
+        onkey="
+        if(event.key == 'Enter'){
+            display();
+        }
+        display();
+    ">
+    <button onclick = "
+       display();      
+    ">Submit</button>
+    <p class = "show"></p>
+<script>
+    function display() {
+        const name = document.querySelector('.name');
+        document.querySelector('.show')
+        .innerHTML = name.value;
+    }
+</script>
+</body>
+</html>
