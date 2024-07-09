@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <link rel = "stylesheet" href = "To-Do-Project.css">
+        <p>To-Do-List</p>
+        <div class = "todo-input-grid">
+            <input placeholder = "Todo name" class=" todoElement input-block" onkeydown = "
+                if(event.key == 'Enter'){
+                    addOne();
+                }
+            ">
+        <input type ="date" class = "date-input input-block" onkeydown = "
+            if(event.key == 'Enter'){
+                addOne();
+            }
+        ">
+        <button onclick = " 
+            addOne();
+        " class="add-button">Add</button>
+        </div>
+        
+        <div class = "show-todo todo-grid"></div>
+    </body>
+    <script src = "To-Do-Project.js"></script>
+</html>
